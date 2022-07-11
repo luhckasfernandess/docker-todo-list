@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:14-alpine as todofrontend
 WORKDIR /todo-app/front-end/
 EXPOSE 3000
 ADD node_modules.tar.gz .
